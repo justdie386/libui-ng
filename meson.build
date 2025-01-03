@@ -57,9 +57,6 @@ if libui_OS == 'darwin'
 endif
 
 libui_mode = get_option('default_library')
-if libui_mode == 'both'
-	error('sorry, but libui does not support building both shared and static libraries at the same time, because Windows resource file rules differ between the two')
-endif
 
 libui_is_debug = get_option('buildtype').startswith('debug')
 
